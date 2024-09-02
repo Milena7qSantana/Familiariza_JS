@@ -5,13 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script defer src="/Ex01/Ex01.js"></script>
+    <link rel="stylesheet" href="/Ex01/Ex01.css" />
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat accusamus
-      dignissimos odit libero fugit officia fuga neque accusantium nemo,
-      numquam, tenetur suscipit ex impedit quo delectus quae consequatur
-      temporibus aspernatur?
-    </p>
+    <div class="container">
+      <div class="titulo">
+        <h2>
+          Calcule se o estudante foi aprovado ou não de acordo com a média de
+          duas notas.
+        </h2>
+      </div>
+      <div class="titulo">
+        <h3>Formulário das notas</h3>
+        <hr />
+        <div>
+          <form action="formula">
+            <label for="nota1">Primeira nota</label>
+            <input type="text" id="nota1" name="nota1" />
+            <br /><br /><br />
+            <label for="nota2">Segunda nota</label>
+            <input type="text" id="nota2" name="nota2" />
+            <br /><br /><br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <div class="titulo">
+        <h3>Estudante reprovado!</h3>
+      </div>
+    </div>
   </body>
 </html>
