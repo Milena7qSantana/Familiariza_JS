@@ -9,29 +9,29 @@
   </head>
   <body>
     <div class="container">
-      <div class="titulo">
+      <div class="bloco">
         <h2>
           Calcule se o estudante foi aprovado ou não de acordo com a média de
           duas notas.
         </h2>
       </div>
-      <div class="titulo">
+      <div class="bloco">
         <h3>Formulário das notas</h3>
         <hr />
         <div>
-          <form action="formula">
+          <form>
             <label for="nota1">Primeira nota</label>
-            <input type="text" id="nota1" name="nota1" />
+            <input type="number" id="nota1" name="nota1" />
             <br /><br /><br />
             <label for="nota2">Segunda nota</label>
-            <input type="text" id="nota2" name="nota2" />
+            <input type="number" id="nota2" name="nota2" />
             <br /><br /><br />
-            <input type="submit" value="Submit" />
+            <button type="button" onclick="calcularMedia()">Calcular</button>
           </form>
         </div>
       </div>
-      <div class="titulo">
-        <h3>Estudante reprovado!</h3>
+      <div class="bloco">
+        <h3 id="resultado">"Resultado do cálculo"</h3>
       </div>
     </div>
   </body>
