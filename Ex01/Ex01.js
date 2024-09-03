@@ -17,7 +17,7 @@ if (media < 4) {
    console.log("Estudante de recuperação!");
 }*/
 
-function calcularMedia(event) {
+/*function calcularMedia(event) {
   event.preventDefault();
 
   const nota1Input = document.getElementById("nota1");
@@ -38,4 +38,35 @@ function calcularMedia(event) {
   } else {
     resultadoElement.innerHTML = "Estudante de recuperação!";
   }
-}
+}*/
+
+const nota1Elemento = document.getElementById("nota1");
+const nota2Elemento = document.getElementById("nota2");
+const classificacao = document.getElementById("classificacao");
+
+const nota1 = parseFloat(nota1Elemento.value);
+const nota2 = parseFloat(nota2Elemento.value);
+
+const calcularMedia = () => {
+  if (isNaN(nota1) && isNaN(nota2)) {
+    resultado.innerHTML = "Preencha os campos!";
+  } else {
+    console.log(nota1);
+    console.log(nota2);
+    const media = (nota1 + nota2) / 2;
+    let classificacao = "";
+
+    if (media <= 4) {
+      classificacao = "Estudante reprovado!";
+    } else if (media >= 6) {
+      classificacao = "Estudante aprovado!";
+    } else {
+      classificacao = "Estudante de recuperação!";
+    }
+
+    console.log(resultado);
+    console.log(media);
+    resultado.innerHTML =
+      "Resultado: " + classificacao + "<br/ > Nota: " + media;
+  }
+};
