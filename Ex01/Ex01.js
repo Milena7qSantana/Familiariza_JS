@@ -49,11 +49,12 @@ const nota2 = parseFloat(nota2Elemento.value);
 
 const calcularMedia = () => {
   if (isNaN(nota1) && isNaN(nota2)) {
-    resultado.innerHTML = "Preencha os campos!";
+    resultado.innerHTML =
+      '<div class="bloco"><h3>"Preencha os campos!"</h3></div>';
   } else {
     console.log(nota1);
     console.log(nota2);
-    const media = (nota1 + nota2) / 2;
+    let media = (nota1 + nota2) / 2;
     let classificacao = "";
 
     if (media <= 4) {
@@ -67,6 +68,9 @@ const calcularMedia = () => {
     console.log(resultado);
     console.log(media);
     resultado.innerHTML =
-      "Resultado: " + classificacao + "<br/ > Nota: " + media;
+      '<div class="bloco"><h3>' +
+      classificacao +
+      "<br/ > Nota: " +
+      media + '</h3></div>';
   }
 };

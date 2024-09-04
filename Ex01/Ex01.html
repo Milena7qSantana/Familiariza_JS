@@ -8,7 +8,14 @@
     <link rel="stylesheet" href="/Ex01/Ex01.css" />
   </head>
   <body>
-    <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+    <main class="container">
       <div class="bloco">
         <h2>
           Calcule se o estudante foi aprovado ou não de acordo com a média de
@@ -20,19 +27,20 @@
         <hr />
         <div class="divNota1">
           <label for="nota1">Primeira nota</label>
-          <input type="number" id="nota1"/>
+          <input type="number" id="nota1" />
         </div>
         <div class="divNota2">
           <label for="nota2">Segunda nota</label>
-          <input type="number" id="nota2"/>
+          <input type="number" id="nota2" />
         </div>
         <div class="divEnviar">
           <button onclick="calcularMedia()">Calcular</button>
         </div>
       </div>
-      <div class="bloco">
-        <h3 id="resultado">"Resultado do cálculo"</h3>
-      </div>
-    </div>
+      <div id="resultado"></div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Milena7q. Todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
