@@ -1,0 +1,39 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.botoes {
+   display: flex;
+   justify-content: center;
+}
+
+label,
+input,
+button,
+p {
+  color: #fff;
+  background-color: #202020;
+  border: 1px solid #610000;
+  padding: 10px;
+  margin: 5px;
+}
+
+button {
+  background-color: #404040;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #606060;
+}
+
+#saida {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto
+}
