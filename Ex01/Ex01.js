@@ -44,13 +44,15 @@ const nota1Elemento = document.getElementById("nota1");
 const nota2Elemento = document.getElementById("nota2");
 const classificacao = document.getElementById("classificacao");
 
-const nota1 = parseFloat(nota1Elemento.value);
-const nota2 = parseFloat(nota2Elemento.value);
-
 const calcularMedia = () => {
+  const nota1 = parseFloat(nota1Elemento.value);
+  const nota2 = parseFloat(nota2Elemento.value);
   if (isNaN(nota1) && isNaN(nota2)) {
     resultado.innerHTML =
       '<div class="bloco"><h3>"Preencha os campos!"</h3></div>';
+  } else if (nota1 < 0 || nota2 < 0 || nota1 > 10 || nota2 > 10) {
+    resultado.innerHTML =
+      '<div class="bloco"><h3>"Um ou mais valores inválidos"</h3></div>';
   } else {
     console.log(nota1);
     console.log(nota2);
@@ -71,6 +73,7 @@ const calcularMedia = () => {
       '<div class="bloco"><h3>' +
       classificacao +
       "<br/ > Nota: " +
-      media + '</h3></div>';
+      media +
+      "</h3></div>";
   }
 };
