@@ -11,12 +11,63 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>
+      Programa que faz a operação com dois números de acordo com a opção do
+      usuário
+    </title>
   </head>
-  <body>
-   <main>
-      
-   </main>
+  <body class="container">
+    <header>
+      <h1>
+        Programa que faz a operação com dois números de acordo com a opção do
+        usuário
+      </h1>
+    </header>
+    <main>
+      <section>
+        <!-- Mostra as operações possíveis -->
+        <h2>Operações</h2>
+        <ul>
+          <li>1 | Adicão</li>
+          <li>2 | Subtração</li>
+          <li>3 | Multiplicação</li>
+          <li>4 | Divisão</li>
+        </ul>
+      </section>
+      <section>
+        <!-- Input de código de operação -->
+        <input
+          type="number"
+          id="codigo"
+          placeholder="Digite o número da operação"
+        />
+        <button onclick="definirOperacao()" type="submit">Enviar</button>
+      </section>
+      <section class="border border-3 p-3">
+        <!-- Operação -->
+        <div>
+          <h3>Soma selecionada!</h3>
+          <input
+            type="number"
+            id="numero1"
+            placeholder="Digite o primeiro número"
+          />
+          <input
+            type="number"
+            id="numero1"
+            placeholder="Digite o segundo número"
+          />
+          <button onclick="definirOperacao()" type="submit">Enviar</button>
+        </div>
+        <!--Produto-->
+        <div>
+          <h3>Resultado</h3>
+          <div>
+            <p>asdasd</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
